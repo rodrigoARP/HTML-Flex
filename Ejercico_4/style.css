@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p{
+    text-align: justify;
+    font-size: 15px;
+    color: rgb(121, 121, 121);
+    line-height: 1.5;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(192, 192, 192);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f0f8ff;
+    gap: 40px;
+    border: 3px solid rgb(164, 164, 164);
+}
+
+ol{
+    counter-reset: item;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #d8dfe4;
+    border-radius: 8px;
+    padding: 15px 0px 15px 0px;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+li{
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+}
+
+li::before{
+    padding: 10px;
+    content: counter(item);
+    counter-increment: item;
+    color: rgb(79, 70, 229);
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    margin-right: 10px;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+li:first-child::before{
+    color: white;
+    background-color: #14b8a6;
+}
+
+li:nth-child(2)::before{
+    color: white;
+    background-color: #4f46e5;
+}
+
+.bullets{
+    color: gray;
+    font-weight: bold;
+    margin-left: 35px;
+}
+
+.bullets-done{
+    color: #14b8a6;
+    font-weight: bold;
+    margin-left: 35px;
+}
+
+.preferences{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+h1{
+    font-size: 24px;
+    color: rgb(51, 51, 51);
+}
+
+select {
+    font-size: 16px;
+    color: rgb(86, 86, 86);
+    padding: 10px;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+}
+
+form {
+    color: rgb(128, 128, 128);
+    font-size: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 10px;
+}
+
+
+.meal {
+    width: 65%;
+}
+
+
+.drink {
+    width: 33%;
+}
+
+label{
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.b_back{
+    background-color: rgb(255, 255, 255);
+    color: rgb(51, 51, 51);
+    font-size: 15px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s, background-color 0.3s;
+}
+
+.b_next{
+    background-color: rgb(88, 79, 255);
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.b_back:hover,
+.b_next:hover{
+    transform: scale(1.05);
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3);
+}
+
+.dessert-selection{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}

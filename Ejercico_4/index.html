@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon.png" sizes="32x32" type="image/png">
+    <title>Meals Preferences</title>
+</head>
+<body>
+    <main>
+        <ol>
+            <li class="done">
+                Cabin
+                <p class="bullets-done">••••••</p>
+            </li>
+            <li>
+                Meal
+                <p class="bullets">••••••</p>
+            </li>
+            <li>
+                Upgrades
+                <p class="bullets">••••••</p>
+            </li>
+            <li>
+                Payment
+            </li>
+        </ol>
+
+        <div class="preferences">
+            <h1>Meals Preferences</h1>
+            
+            <p>
+                Your flight comes with breakfast, lunch and dinner. Please make your selections below.<br>
+                Changes to your order can be made up to 48 hours before your flight.
+            </p>
+
+            <form action="none">
+                    
+                <label class="meal">Breakfast</label>
+                <label class="drink">Drink</label>
+                
+                <select class="meal">
+                    <option value="Scramble">Sausage Egg Scramble Bowl</option>
+                </select>
+                <select class="drink">
+                    <option value="coffe">Coffe</option>
+                </select>
+
+                <label class="meal">Lunch</label>
+                <label class="drink">Lunch</label>
+
+                <select class="meal">
+                    <option value="sandwich">Club Sandwich Meal</option>
+                </select>
+                <select class="drink">
+                    <option value="cranberry">Cranberry</option>
+                </select>
+
+                <label class="meal">Dinner</label>
+                <label class="drink">Dinner</label>
+
+                <select class="meal">
+                    <option value="beef">Wagyu Beef Sliders Meal</option>
+                </select>
+
+                <select class="drink">
+                    <option value="wine">Red Wine</option>
+                </select>
+
+                <div class="dessert-selection">
+                    <input type="checkbox">
+                    <label>I'd like dessert, too!</label>
+                </div>
+            </form>
+        </div>
+        
+        <div class="buttons">
+            <button class="b_back">Back</button>
+            <button class="b_next">Next</button>
+        </div>
+
+    </main>
+</body>
+</html>
